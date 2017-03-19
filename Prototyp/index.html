@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="de-at">
 
 <head>
 
@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Scrolling Nav - Start Bootstrap Template</title>
+    <title>openimmomap - freie Immobilienpreise für Wien</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -45,7 +45,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">openimmomap</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -56,13 +56,13 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about">Über uns</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#services">Impressum</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">Kontakt</a>
                     </li>
                 </ul>
             </div>
@@ -85,6 +85,8 @@
                                 subdomains: ['maps', 'maps1', 'maps2', 'maps3', 'maps4'],
                                 attribution: '&copy; <a href="http://basemap.at">Basemap.at</a>, openimmomap'
                             }).addTo(mymap);
+                            var marker = L.marker([48.2089119, 16.3711587]).addTo(mymap).bindPopup("<b>Wien</b><br>Stephansdom");
+
                         </script>
 
                 </div>
@@ -97,7 +99,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>About Section</h1>
+                    <h1>Über uns</h1>
                 </div>
             </div>
         </div>
@@ -108,7 +110,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Services Section</h1>
+                    <h1>Impressum</h1>
                 </div>
             </div>
         </div>
@@ -119,7 +121,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Contact Section</h1>
+                    <h1>Kontakt</h1>
                 </div>
             </div>
         </div>
